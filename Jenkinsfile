@@ -30,7 +30,7 @@ pipeline {
        stage('docker container run'){
            steps{
                sshagent(['webserver']) {
-                   sh 'ssh -o StrictHostKeyChecking=no ubuntu@3.111.246.113 sudo docker run -itd -p 3001:3000 dheerajthuniki/amazona-app:latest '
+                   sh 'ssh -o StrictHostKeyChecking=no ubuntu@3.111.246.113 sudo docker run -itd -p 3008:3000 dheerajthuniki/amazona-app:latest '
                   
                }
                
